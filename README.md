@@ -13,6 +13,8 @@ WORKDAYS today = Monday; //value 1
 
 # defining an enum
 
+for better compiler support and to ensure the size of MyEnum use NS_ENUM
+
 ``` objective-c
 tydef NS_ENUM(NSUInteger, MyEnum) {
   MyEnumValueA,
@@ -21,6 +23,9 @@ tydef NS_ENUM(NSUInteger, MyEnum) {
 }
 ```
 
+for better compiler support and to ensure the size of MyEnum use NS_ENUM
+
+
 ``` objective-c
 tydef NS_ENUM(NSUInteger, MyEnum) {
   MyEnumValueA = 0,
@@ -28,6 +33,8 @@ tydef NS_ENUM(NSUInteger, MyEnum) {
   MyEnumvalueC = 10,
 }
 ```
+for better compiler support and to ensure the size of MyEnum use NS_ENUM
+
 
 ``` objective-c
 tydef NS_ENUM(NSUInteger, MyEnum) {
@@ -36,6 +43,9 @@ tydef NS_ENUM(NSUInteger, MyEnum) {
   MyEnumvalueC
 }
 ```
+
+for better compiler support and to ensure the size of MyEnum use NS_ENUM
+
 
 ``` objective-c
 MyEnum enumVar = MyEnumValueA;
