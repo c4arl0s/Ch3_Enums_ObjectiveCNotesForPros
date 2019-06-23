@@ -58,6 +58,8 @@ typedef NS_ENUM(NSUInteger, PlayerState) {
 MyEnum enumVar = MyEnumValueA;
 ```
 
+# Example of an Enumeration 
+
 ``` objective-c
 //
 //  AppDelegate.m
@@ -118,6 +120,7 @@ MyEnum enumVar = MyEnumValueA;
 @end
 ```
 
+# declare the enum in h file.
 
 ``` objective-c
 //
@@ -142,6 +145,7 @@ typedef NS_ENUM(NSUInteger, PlayerState) {
 @end
 ```
 
+# Use the enumeration in m file.
 
 ``` objective-c
 //
@@ -180,8 +184,7 @@ typedef NS_ENUM(NSUInteger, PlayerState) {
 @end
 ```
 
-
-# Run
+# This is what the console retrieves
 
 ``` console
 2019-06-22 18:51:52.756514-0600 DefiningAnEnum[12495:1233032] The player state is off
