@@ -46,11 +46,13 @@ tydef NS_ENUM(NSUInteger, MyEnum) {
 
 for better compiler support and to ensure the size of MyEnum use NS_ENUM
 
+``` objective-c
 typedef NS_ENUM(NSUInteger, PlayerState) {
   playerStateOff,
   playerStatePlaying,
   playerStatePause
 };
+```
 
 ``` objective-c
 MyEnum enumVar = MyEnumValueA;
