@@ -11,9 +11,7 @@ typedef enum {
 WORKDAYS today = Monday; //value 1
 ```
 
-# defining an enum
-
-for better compiler support and to ensure the size of MyEnum use NS_ENUM
+### for better compiler support and to ensure the size of MyEnum use NS_ENUM
 
 ``` objective-c
 tydef NS_ENUM(NSUInteger, MyEnum) {
@@ -23,7 +21,7 @@ tydef NS_ENUM(NSUInteger, MyEnum) {
 }
 ```
 
-for better compiler support and to ensure the size of MyEnum use NS_ENUM
+### for better compiler support and to ensure the size of MyEnum use NS_ENUM
 
 
 ``` objective-c
@@ -33,7 +31,8 @@ tydef NS_ENUM(NSUInteger, MyEnum) {
   MyEnumvalueC = 10,
 }
 ```
-for better compiler support and to ensure the size of MyEnum use NS_ENUM
+
+### for better compiler support and to ensure the size of MyEnum use NS_ENUM
 
 
 ``` objective-c
@@ -44,7 +43,7 @@ tydef NS_ENUM(NSUInteger, MyEnum) {
 }
 ```
 
-for better compiler support and to ensure the size of MyEnum use NS_ENUM
+### for better compiler support and to ensure the size of MyEnum use NS_ENUM
 
 ``` objective-c
 typedef NS_ENUM(NSUInteger, PlayerState) {
@@ -58,7 +57,7 @@ typedef NS_ENUM(NSUInteger, PlayerState) {
 MyEnum enumVar = MyEnumValueA;
 ```
 
-# Example of an Enumeration 
+### Example of an Enumeration 
 
 ``` objective-c
 //
@@ -120,7 +119,7 @@ MyEnum enumVar = MyEnumValueA;
 @end
 ```
 
-# declare the enum in h file.
+### declare the enum in h file.
 
 ``` objective-c
 //
@@ -145,7 +144,7 @@ typedef NS_ENUM(NSUInteger, PlayerState) {
 @end
 ```
 
-# Use the enumeration in m file.
+### Use the enumeration in m file.
 
 ``` objective-c
 //
@@ -184,7 +183,7 @@ typedef NS_ENUM(NSUInteger, PlayerState) {
 @end
 ```
 
-# This is what the console retrieves
+### This is what the console retrieves
 
 ``` console
 2019-06-22 18:51:52.756514-0600 DefiningAnEnum[12495:1233032] The player state is off
