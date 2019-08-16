@@ -62,9 +62,9 @@ MyEnum enumVar = MyEnumValueA;
 ``` objective-c
 //
 //  AppDelegate.m
-//  DefiningAnEnum
+//  DefiningAnEnum_ObjectiveC
 //
-//  Created by Carlos Santiago Cruz on 6/22/19.
+//  Created by Carlos Santiago Cruz on 8/15/19.
 //  Copyright © 2019 Carlos Santiago Cruz. All rights reserved.
 //
 
@@ -124,9 +124,9 @@ MyEnum enumVar = MyEnumValueA;
 ``` objective-c
 //
 //  ViewController.h
-//  DefiningAnEnum
+//  DefiningAnEnum_ObjectiveC
 //
-//  Created by Carlos Santiago Cruz on 6/22/19.
+//  Created by Carlos Santiago Cruz on 8/15/19.
 //  Copyright © 2019 Carlos Santiago Cruz. All rights reserved.
 //
 
@@ -149,9 +149,9 @@ typedef NS_ENUM(NSUInteger, PlayerState) {
 ``` objective-c
 //
 //  ViewController.m
-//  DefiningAnEnum
+//  DefiningAnEnum_ObjectiveC
 //
-//  Created by Carlos Santiago Cruz on 6/22/19.
+//  Created by Carlos Santiago Cruz on 8/15/19.
 //  Copyright © 2019 Carlos Santiago Cruz. All rights reserved.
 //
 
@@ -179,14 +179,35 @@ typedef NS_ENUM(NSUInteger, PlayerState) {
         default:
             break;
     }
+    
+    // Now use it with a method
+    [self checkAvailability:playerState];
+    
 }
+
+-(void)checkAvailability:(PlayerState)playerState
+{
+    switch (playerState) {
+        case playerStateOff:
+            NSLog(@"The player state is off");
+            break;
+        case playerStatePause:
+            NSLog(@"The player state is pause");
+        case playerStatePlaying:
+            NSLog(@"The player state is playing");
+        default:
+            break;
+    }
+}
+
 @end
 ```
 
 # This is what the console retrieves
 
 ``` console
-2019-06-22 18:51:52.756514-0600 DefiningAnEnum[12495:1233032] The player state is off
+2019-08-15 21:41:38.225761-0500 DefiningAnEnum_ObjectiveC[12862:922139] The player state is off
+2019-08-15 21:41:38.225973-0500 DefiningAnEnum_ObjectiveC[12862:922139] The player state is off
 ```
 
 
